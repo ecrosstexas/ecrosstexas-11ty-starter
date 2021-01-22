@@ -1,0 +1,17 @@
+{
+  "label": "EXTRAS",
+    "items": [
+      {
+        "text": "Feeds",
+        "url": "/feeds/"
+      },
+      {
+        "text": "Settings",
+        "url": "/settings/"
+      },
+      {
+        "text": "Site Map",
+        "url": "/site-map/"
+      }
+    ]
+  }

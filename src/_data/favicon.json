@@ -1,0 +1,18 @@
+{
+    "favicon16": "/img/favicon-16x16.png",
+    "favicon32": "/img/favicon-32x32.png",
+    
+    "androidChrome192x192": "/img/android-chrome-192x192.png",
+    "androidChrome512x512": "/img/android-chrome-512x512.png",
+    "androidThemeColor": "#ffffff",
+    "androidBkgColor": "#ffffff",
+
+    "appleTouchIcon": "/img/apple-touch-icon.png",
+    "appleSafariMask": "/img/safari-pinned-tab.svg",
+    "appleSafariMaskColor": "#5bbad5",
+    
+    "msTile150x150": "/img/mstile-150x150.png",
+    "msTile310x310": "/img/mstile-310x310.png",
+    "msTile310x150": "/img/mstile-310x150.png",
+    "msTileColor": "#da532c"
+}

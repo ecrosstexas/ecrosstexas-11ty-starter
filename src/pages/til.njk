@@ -1,0 +1,21 @@
+---
+title: Today I Learned
+description: Planned upgrades to this site
+permalink: /til/index.html
+layout: layouts/page.njk
+---
+Inspirations: 
+- https://dev.to/jbranchaud/how-i-built-a-learning-machine-45k9
+- https://til.simonwillison.net
+- https://simonwillison.net/2020/Apr/20/self-rewriting-readme/
+
+{% set postslist = collections.til %}
+
+{#
+  Allows a user to easily change the Post List Style.
+  Change the 'postListStyle' value in /_data/structure.json.
+  NOTE: Can make this a select in the CMS?
+#}
+{% set postlist = ['components/', structure.postListStyle, '.njk'] %}
+{% include postlist | join %}
+

@@ -1,0 +1,25 @@
+---
+title: This is Post One
+date: 2020-12-30T16:03:28-07:00
+description:
+excerpt: Change everything about this or delete it and start again.
+author: 
+draft: false
+seo:
+  title: # if left blank, title above used
+  description: # if left blank, excerpt above used
+  image: # relative to /assets/images, if blank, uses -> /src/assets/images/meta/default.png
+images: # relative to /src/assets/images/
+  feature: # used for hero
+  thumb: # used for collections listing view
+  slide:
+tags:
+  - newbie
+  - first
+---
+
+**Hello...**
+
+This is your first post. It is formatted using [Markdown](https://www.markdownguide.org/) but you can also use regular HTML if you need more fine grain control.
+
+And because we're using 11ty, you can even use [Nunjucks tags](https://mozilla.github.io/nunjucks/templating.html) mixed in with the Markdown and HTML.

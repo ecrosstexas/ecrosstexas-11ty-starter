@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+tags: pages
+---
+<article class="container px-4 py-24 mx-auto" itemid="#" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="w-full mx-auto mb-12 text-center md:w-2/3">
+    <h1 class="mb-3 text-5xl font-bold text-gray-900 md:leading-tight md:text-5xl" itemprop="headline" title="Rise of Tailwind - A Utility First CSS Framework">
+      {{ title }}
+    </h1>
+    <p class="mb-3 text-xl font-semibold tracking-wider text-gray-500 ">{{ description }}</p>
+  </div>
+
+  <div class="mx-auto prose">
+   {{ layoutContent | safe }}
+  </div>
+
+  <p class="text-gray-700">
+      Written by
+      <span class="byline author vcard" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+        <a href="#" target="_blank" itemprop="url" rel="author noopener noreferrer" class="text-primary hover:text-primary-dark"><span itemprop="name">{{ postAuthor }}</span></a>
+      </span>
+      on <time itemprop="datePublished dateModified" datetime="{{ date | dateToFormat("yyyy-MM-dd") }}" pubdate>{{ date | dateToFormat("dd LLL yyyy") }}</time>
+    </p>
+</article>

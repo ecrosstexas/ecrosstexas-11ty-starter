@@ -1,0 +1,22 @@
+{
+    "label": "CATEGORIES",
+      "items": [
+        {
+              "text": "First Link",
+              "url": "#"
+            },
+        {
+          "text": "Second Link",
+          "url": "#"
+        },
+        {
+            "text": "Third Link",
+            "url": "#"
+          },
+          {
+            "text": "Fourth Link",
+            "url": "#"
+          }
+      ]
+    }
+  

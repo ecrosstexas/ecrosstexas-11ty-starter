@@ -1,0 +1,21 @@
+---
+title: Site Map
+description: A site map for humans
+permalink: /site-map/index.html
+layout: layouts/page.njk
+---
+<h2>Pages</h2>
+<ul>
+{% for page in collections.pages %}
+        <li><a href="{{ page.url | url }}">{{ page.data.title }}</a></li>
+    {% endfor %}
+</ul>
+
+<h2>Blog Posts</h2>
+<ul>
+{% for page in collections.post %}
+        <li><a href="{{ page.url | url }}">{{ page.data.title }}</a></li>
+    {% endfor %}
+</ul>
+
+<p>A <a href="/sitemap.xml">site map for robots</a> is also available.</p>

@@ -1,0 +1,15 @@
+---
+# http://www.robotstxt.org
+permalink: /robots.txt
+layout: null
+eleventyExcludeFromCollections: true
+---
+Sitemap: {{ meta.siteURL }}/sitemap.xml
+
+# Allow crawling of all content
+User-agent: *
+Disallow: /admin
+Disallow: /css
+Disallow: /img
+Disallow: /js
+Disallow: /vendor

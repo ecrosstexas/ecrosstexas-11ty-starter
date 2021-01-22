@@ -1,0 +1,32 @@
+{%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
+{%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
+{%- set pageSocialImg %}{{ meta.siteURL }}/previews/{% if title %}{{ title | slug }}{% else %}home{% endif %}.png{% endset -%}
+{%- set pageType %}{% if type %}{{ type }}{% else %}{{ meta.type }}{% endif %}{% endset -%}
+{%- set pageCanonical %}{% if canonical %}{{ canonical }}{% else %}{{ meta.siteCanonical }}{{ page.url }}{% endif %}{% endset -%}
+
+
+<!doctype html>
+<html lang="{{ meta.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDescription }}" />
+
+{% include "partials/head.njk" %}
+
+{% if meta.netlifyCMS == "true" %}
+{% include "partials/admin.njk" %}
+{% endif %}
+
+</head>
+<body>
+{% include "partials/header.njk" %}
+
+{{ content | safe }}
+
+{% include "partials/footer2.njk" %}
+{% include "partials/footer-scripts.njk" %}
+
+</body>
+</html>

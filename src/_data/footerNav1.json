@@ -1,0 +1,25 @@
+{
+  "label": "SITE",
+    "items": [
+      {
+        "text": "Home",
+        "url": "/"
+      },
+      {
+        "text": "About",
+        "url": "/about/"
+      },
+      {
+        "text": "Blog",
+        "url": "/blog/"
+      },
+      {
+        "text": "Colophon",
+        "url": "/colophon/"
+      },
+      {
+        "text": "Contact",
+        "url": "/contact/"
+      }
+    ]
+  }

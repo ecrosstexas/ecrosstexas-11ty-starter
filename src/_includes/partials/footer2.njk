@@ -1,0 +1,104 @@
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+
+        <span class="ml-3 text-xl">{{ meta.siteName }}</span>
+      </a>
+      <p class="mt-2 text-sm text-gray-500">{{ meta.siteDescription }}</p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+
+    {% if footerNav1.items %}
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">{{ footerNav1.label }}</h2>
+                <nav class="list-none mb-10">
+                    {% for item in footerNav1.items %}
+                    <li><a class="text-gray-600 hover:text-gray-800" href="{{ item.url }}">{{ item.text }}</a></li>
+                    {% endfor %}
+                </nav>
+        </div>
+    {% endif %}
+
+      
+     {% if footerNav2.items %}
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">{{ footerNav2.label }}</h2>
+                <nav class="list-none mb-10">
+                    {% for item in footerNav2.items %}
+                    <li><a class="text-gray-600 hover:text-gray-800" href="{{ item.url }}">{{ item.text }}</a></li>
+                    {% endfor %}
+                </nav>
+        </div>
+    {% endif %}
+
+    {% if footerNav3.items %}
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">{{ footerNav3.label }}</h2>
+                <nav class="list-none mb-10">
+                    {% for item in footerNav3.items %}
+                    <li><a class="text-gray-600 hover:text-gray-800" href="{{ item.url }}">{{ item.text }}</a></li>
+                    {% endfor %}
+                </nav>
+        </div>
+    {% endif %}
+
+    {% if footerNav4.items %}
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">{{ footerNav4.label }}</h2>
+                <nav class="list-none mb-10">
+                    {% for item in footerNav4.items %}
+                    <li><a class="text-gray-600 hover:text-gray-800" href="{{ item.url }}">{{ item.text }}</a></li>
+                    {% endfor %}
+                </nav>
+        </div>
+    {% endif %}
+
+    </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">Copyright &copy; {{ helpers.currentYear() }} {{ meta.siteName }}.  
+      <a href="/terms-of-use/">Terms</a>
+      <a href="/privacy-policy/">Privacy</a>
+      <a href="/disclosures/">Disclosures</a>
+
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        {% if meta.siteTwitter %}
+        <a class="ml-3 text-gray-500" href="https://www.twitter.com/{{ meta.siteTwitter }}" rel="me" target="_blank">
+             <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        {% endif %}
+        {% if meta.siteFacebook %}
+        <a class="ml-3 text-gray-500" href="https://www.facebook.com/{{ meta.siteFacebook }}" rel="me" target="_blank">
+            <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        {% endif %}
+        {% if meta.siteYoutube %}
+        <a class="ml-3 text-gray-500" href="{{ meta.siteYoutubeURL }}" rel="me" target="_blank">
+            <i class="fab fa-youtube fa-2x"></i>
+        </a>
+        {% endif %}
+        {% if meta.siteInstagram %}
+        <a class="ml-3 text-gray-500" href="https://www.instagram.com/{{ meta.siteInstagram }}" rel="me" target="_blank">
+            <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        {% endif %}
+        {% if meta.siteLinkedIn %}
+        <a class="ml-3 text-gray-500" href="https://www.linkedin.com/in/{{ meta.siteLinkedIn }}" rel="me" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        {% endif %}
+        {% if meta.siteGithub %}
+        <a class="ml-3 text-gray-500" href="https://www.github.com/{{ meta.siteGithub }}" rel="me" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+        {% endif %}
+      </span>
+    </div>
+  </div>
+</footer>

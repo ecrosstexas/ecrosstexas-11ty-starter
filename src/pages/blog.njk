@@ -1,0 +1,18 @@
+---
+title: The Blog
+description:
+permalink: /blog/index.html
+layout: layouts/page.njk
+type: weblog
+---
+
+{% set postslist = collections.post %}
+
+{#
+  Allows a user to easily change the Post List Style.
+  Change the 'postListStyle' value in /_data/structure.json.
+  NOTE: Can make this a select in the CMS?
+#}
+{% set postlist = ['components/', structure.postListStyle, '.njk'] %}
+{% include postlist | join %}
+

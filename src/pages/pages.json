@@ -1,0 +1,6 @@
+{
+	"layout": "layouts/page.njk",
+	"permalink": "/{{ title | slugify }}/index.html",
+	"tags": "pages",
+	"author": "{{ meta.authorName }}"
+}
